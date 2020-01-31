@@ -2,8 +2,9 @@
 // @name        Aliexpress Localized links remover
 // @description Removes localized links for Aliexpress and replaces them to the English site urls
 // @namespace   https://github.com/IRainman/user_scripts
+// @supportURL  https://github.com/IRainman/user_scripts/issues
 // @author      HedgehogInTheCPP
-// @version     1.0
+// @version     1.1
 // @grant       none
 // @include     http://*
 // @include     https://*
