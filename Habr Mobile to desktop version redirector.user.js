@@ -1,12 +1,13 @@
 // ==UserScript==
-// @name         Habr Mobile to desktop version redirector
-// @namespace    https://github.com/IRainman/user_scripts
-// @version      1.0
-// @description  Automatically redirects from mobile to desktop version
-// @author       HedgehogInTheCPP
-// @match        https://m.habr.com/*
-// @match        http://m.habr.com/*
-// @grant        none
+// @name        Habr Mobile to desktop version redirector
+// @namespace   https://github.com/IRainman/user_scripts
+// @supportURL  https://github.com/IRainman/user_scripts/issues
+// @version     1.1
+// @description Automatically redirects from mobile to desktop version
+// @author      HedgehogInTheCPP
+// @match       https://m.habr.com/*
+// @match       http://m.habr.com/*
+// @grant       none
 // ==/UserScript==
 
 (function() {
