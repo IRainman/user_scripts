@@ -2,8 +2,9 @@
 // @name        Aliexpress Auto translate disable
 // @description Disable auto translation in title and description for Aliexpress sites.
 // @namespace   https://github.com/IRainman/user_scripts
+// @supportURL  https://github.com/IRainman/user_scripts/issues
 // @author      HedgehogInTheCPP
-// @version     1.0
+// @version     1.1
 // @grant       none
 // @include     http://*
 // @include     https://*
