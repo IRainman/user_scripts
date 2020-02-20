@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name        Habr Mobile to desktop version redirector
+// @homepageURL https://github.com/IRainman/user_scripts
 // @namespace   https://github.com/IRainman/user_scripts
 // @supportURL  https://github.com/IRainman/user_scripts/issues
 // @version     1.1
