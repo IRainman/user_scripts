@@ -3,7 +3,7 @@
 // @homepageURL https://github.com/IRainman/user_scripts
 // @namespace   https://github.com/IRainman/user_scripts
 // @supportURL  https://github.com/IRainman/user_scripts/issues
-// @version     1.1
+// @version     1.2
 // @description Automatically redirects from mobile to desktop version
 // @author      HedgehogInTheCPP
 // @match       https://m.habr.com/*
@@ -13,8 +13,8 @@
 
 (function() {
     'use strict';
-    var url = 'https://habr.com' + window.location.href.toString().split(window.location.host)[1];
-    var form = document.createElement('form');
+    let url = 'https://habr.com' + window.location.href.toString().split(window.location.host)[1];
+    let form = document.createElement('form');
     form.method = 'post';
     form.action = url;
     document.body.appendChild(form);
