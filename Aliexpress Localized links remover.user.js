@@ -5,7 +5,7 @@
 // @namespace   https://github.com/IRainman/user_scripts
 // @supportURL  https://github.com/IRainman/user_scripts/issues
 // @author      HedgehogInTheCPP
-// @version     1.1
+// @version     1.2
 // @grant       none
 // @include     http://*
 // @include     https://*
