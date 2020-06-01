@@ -5,14 +5,14 @@
 // @namespace   https://github.com/IRainman/user_scripts
 // @supportURL  https://github.com/IRainman/user_scripts/issues
 // @author      HedgehogInTheCPP
-// @version     1.1
+// @version     1.2
 // @grant       none
 // @include     http://*
 // @include     https://*
 // ==/UserScript==
 (function () {
 	String.prototype.replaceAt=function(index, replacement, length) {
-    	return this.substr(0, index) + replacement + this.substr(index + length);
+    		return this.substr(0, index) + replacement + this.substr(index + length);
 	}
 	function replaceLinkPattern(pattern, replacement, link) {
 		const index = link.href.indexOf(pattern);
@@ -37,15 +37,15 @@
 	}
 	rwLink(location);
 	function rwLinksInNode(node, patterns) {
-		var links = node.getElementsByTagName('a');
-		for (var i = 0; i < links.length; ++i) {
+		let links = node.getElementsByTagName('a');
+		for (let i = 0; i < links.length; ++i) {
 			rwLink(links[i]);
 		}
 	}
 	(function () {
 		document.addEventListener('DOMNodeInserted', function (event) {
 			if (event && event.target &&(event.target instanceof HTMLElement)) {
-				var node = event.target;
+				let node = event.target;
 				if (node instanceof HTMLAnchorElement) {
 					rwLink(node);
 				}
