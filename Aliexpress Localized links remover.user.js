@@ -12,7 +12,7 @@
 // ==/UserScript==
 (function () {
 	String.prototype.replaceAt=function(index, replacement, length) {
-    	return this.substr(0, index) + replacement + this.substr(index + length);
+    		return this.substr(0, index) + replacement + this.substr(index + length);
 	}
 	function replaceLinkPattern(pattern, replacement, link) {
 		const index = link.href.indexOf(pattern);
@@ -42,22 +42,22 @@
 	 ];
  	const replacement = 'aliexpress.com';
 	function rwLink(link) {
-	 	for (var i = 0; i < domains.length; ++i) {
+	 	for (let i = 0; i < domains.length; ++i) {
 			if (replaceLinkPattern(domains[i], replacement, link)) {
 				break;
 			}
 		}
 	}
 	function rwLinksInNode(node, patterns) {
-		var links = node.getElementsByTagName('a');
-		for (var i = 0; i < links.length; ++i) {
+		let links = node.getElementsByTagName('a');
+		for (let i = 0; i < links.length; ++i) {
 			rwLink(links[i]);
 		}
 	}
 	(function () {
 		document.addEventListener('DOMNodeInserted', function (event) {
 			if (event && event.target &&(event.target instanceof HTMLElement)) {
-				var node = event.target;
+				let node = event.target;
 				if (node instanceof HTMLAnchorElement) {
 					rwLink(node);
 				}
