@@ -19,6 +19,14 @@ https://github.com/IRainman/user_scripts/raw/master/Aliexpress%20Localized%20lin
 
 
 
+Aliexpress Mobile to desktop version redirector
+
+Automatically redirects from mobile to desktop version
+
+https://github.com/IRainman/user_scripts/blob/master/Aliexpress%20mobile%20to%20desktop.user.js
+
+
+
 Habr Mobile to desktop version redirector
 
 Automatically redirects from mobile to desktop version
