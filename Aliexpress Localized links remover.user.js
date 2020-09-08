@@ -5,7 +5,7 @@
 // @namespace   https://github.com/IRainman/user_scripts
 // @supportURL  https://github.com/IRainman/user_scripts/issues
 // @author      HedgehogInTheCPP
-// @version     1.2
+// @version     1.3
 // @grant       none
 // @include     http://*
 // @include     https://*
@@ -39,6 +39,7 @@
 		'vi.aliexpress.com',
 		'he.aliexpress.com',
 		'fr.aliexpress.com',
+		'de.aliexpress.com',
 	 ];
  	const replacement = 'aliexpress.com';
 	function rwLink(link) {
