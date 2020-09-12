@@ -5,7 +5,7 @@
 // @namespace   https://github.com/IRainman/user_scripts
 // @supportURL  https://github.com/IRainman/user_scripts/issues
 // @author      HedgehogInTheCPP
-// @version     1.4
+// @version     1.5
 // @grant       none
 // @include     http://*
 // @include     https://*
@@ -24,7 +24,11 @@
 		}
 	}
  	function checkLinkHost(host, link) {
-		if (link.hostname === host) {
+	 	if (link.host == host) {
+			return true;
+		} else if (link.host.length < host.length + 1) {
+			return false;
+		} else if (link.host.endsWith("." + host)) {
 			return true;
 		} else {
 		 	return false;
