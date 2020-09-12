@@ -5,7 +5,7 @@
 // @namespace   https://github.com/IRainman/user_scripts
 // @supportURL  https://github.com/IRainman/user_scripts/issues
 // @author      HedgehogInTheCPP
-// @version     1.3
+// @version     1.4
 // @grant       none
 // @include     http://*
 // @include     https://*
@@ -18,6 +18,13 @@
 		const index = link.href.indexOf(pattern);
 		if (index !== -1) {
 			link.href = link.href.replaceAt(index, replacement, pattern.length);
+			return true;
+		} else {
+		 	return false;
+		}
+	}
+ 	function checkLinkHost(host, link) {
+		if (link.hostname === host) {
 			return true;
 		} else {
 		 	return false;
@@ -44,7 +51,7 @@
  	const replacement = 'aliexpress.com';
 	function rwLink(link) {
 	 	for (let i = 0; i < domains.length; ++i) {
-			if (replaceLinkPattern(domains[i], replacement, link)) {
+			if (checkLinkHost(domains[i], link) && replaceLinkPattern(domains[i], replacement, link)) {
 				break;
 			}
 		}
