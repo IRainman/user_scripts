@@ -39,4 +39,4 @@ VK Video to My video
 
 Auto redirecting to my video
 
-https://raw.githubusercontent.com/IRainman/user_scripts/master/vk_video_fix
+https://github.com/IRainman/user_scripts/raw/master/vk_video_fix.user.js
