@@ -3,11 +3,10 @@
 // @homepageURL https://github.com/IRainman/user_scripts
 // @namespace   https://github.com/IRainman/user_scripts
 // @supportURL  https://github.com/IRainman/user_scripts/issues
-// @version     1.2
+// @version     1.3
 // @description Automatically redirects from mobile to desktop version
 // @author      HedgehogInTheCPP
 // @match       https://m.habr.com/*
-// @match       http://m.habr.com/*
 // @grant       none
 // ==/UserScript==
 
